@@ -3,7 +3,7 @@ import pytest
 from pages.result import DuckDuckGoResultPage
 from pages.search import DuckDuckGoSearchPage
 
-from selenium.webdriver import Chrome
+from selenium.webdriver import Chrome, Firefox
 from selenium.webdriver.common.keys import Keys
 
 import json
@@ -20,6 +20,8 @@ def config():
 def browser(config):
     if config["browser"] == "chrome":
         driver = Chrome()
+    if config["browser"] == "firefox":
+        driver = Firefox()
     else:
         raise Exception(f'"{config["browser"]}" is not a supported browser')
 
