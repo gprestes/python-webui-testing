@@ -1,7 +1,11 @@
 import pytest
 
+from pages.result import DuckDuckGoResultPage
+from pages.search import DuckDuckGoSearchPage
+
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.keys import Keys
+
 
 @pytest.fixture
 def browser():
@@ -10,21 +14,15 @@ def browser():
     yield driver
     driver.quit()
 
+
 def test_basic_duckduckgo_search(browser):
-    URL = 'https://www.duckduckgo.com'
-    PHRASE = 'panda'
+    PHRASE = "panda"
 
-    browser.get(URL)
+    search_page = DuckDuckGoSearchPage(browser)
+    search_page.load()
+    search_page.search(PHRASE)
 
-    search_input = browser.find_element_by_name('q')
-    search_input.send_keys(PHRASE + Keys.RETURN)
-
-    link_divs = browser.find_elements_by_css_selector('#links > div')
-    assert len(link_divs) > 0
-
-    xpath = f"//div[@id='links']//*[contains(text(), '{PHRASE}')]"
-    results = browser.find_elements_by_xpath(xpath)
-    assert len(results) > 0
-
-    search_input = browser.find_element_by_name('q')
-    assert search_input.get_attribute('value') == PHRASE
+    result_page = DuckDuckGoResultPage(browser)
+    assert result_page.link_div_count() > 0
+    assert result_page.phrase_result_count(PHRASE) > 0
+    assert result_page.search_input_value() == PHRASE
