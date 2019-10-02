@@ -18,7 +18,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv install --skip-lock --dev
-        pip install chromedriver_installer
+        pip install chromedriver-py
         
     - name: Run test
       run: |
