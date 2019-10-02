@@ -19,6 +19,8 @@ jobs:
         pip install pipenv
         pipenv install --skip-lock --dev
         pip install chromedriver-py
+        echo $PATH
+        which chromedriver
         
     - name: Run test
       run: |
