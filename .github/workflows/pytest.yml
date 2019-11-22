@@ -20,4 +20,4 @@ jobs:
         pipenv install --skip-lock --dev
     - name: Run tests
       run: |
-        pipenv run python -m pytest tests/test_web.py
+        pipenv run python -m pytest tests/test_math.py
