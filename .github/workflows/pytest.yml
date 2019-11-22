@@ -18,4 +18,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv install --skip-lock --dev
-        pipenv run python -m pytest tests/test_web.py
+    - name: Run tests
+      run: |
+        pipenv run python -m pytest tests/test_math.py
