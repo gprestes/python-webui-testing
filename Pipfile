@@ -7,7 +7,7 @@ verify_ssl = true
 pytest = "==6.0.2"
 selenium = "==4.0.0a6.post2"
 black = "==19.10b0"
-pytest-bdd = "==3.4.0"
+pytest-bdd = "==4.0.1"
 
 [packages]
 
