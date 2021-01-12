@@ -32,7 +32,7 @@ def browser(config_browser, config_wait_time):
         chrome_options = Options()
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--window-size=1920x1080")
-        driver = Chrome(chrome_options=chrome_options)
+        driver = Chrome(options=chrome_options)
     elif config_browser == 'firefox':
         driver = Firefox()
     else:
