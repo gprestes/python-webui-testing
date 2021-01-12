@@ -2,6 +2,7 @@ import json
 import pytest
 
 from selenium.webdriver import Chrome, Firefox
+from selenium.webdriver.chrome.options import Options
 
 CONFIG_PATH = 'tests/config.json'
 DEFAULT_WAIT_TIME = 10
@@ -28,7 +29,10 @@ def config_wait_time(config):
 @pytest.fixture
 def browser(config_browser, config_wait_time):
     if config_browser == 'chrome':
-        driver = Chrome()
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--window-size=1920x1080")
+        driver = Chrome(options=chrome_options)
     elif config_browser == 'firefox':
         driver = Firefox()
     else:
