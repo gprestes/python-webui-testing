@@ -25,12 +25,15 @@ jobs:
       run: pipenv run python -m pytest tests/test_math.py
     - name: Run test_web
       run: pipenv run python -m pytest tests/test_web.py
+    - name: Check user
+      run: |
+        echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
   auto-merge:
     runs-on: ubuntu-latest
     needs: test    
     steps:
       - uses: actions/checkout@v2.3.4
       - uses: ahmadnassri/action-dependabot-auto-merge@v2.3.0
-        if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
+        if: github.event_name == 'pull_request'
         with:
           github-token: ${{ secrets.AUTO_MERGE }}
