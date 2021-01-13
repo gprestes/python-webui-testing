@@ -3,10 +3,8 @@ name: Python application
 on: [push]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2.3.4
     - name: Set up Python 3.8.6
@@ -27,3 +25,12 @@ jobs:
       run: pipenv run python -m pytest tests/test_math.py
     - name: Run test_web
       run: pipenv run python -m pytest tests/test_web.py
+  auto-merge:
+    runs-on: ubuntu-latest
+    needs: test    
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2.3.0
+        if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
+        with:
+          github-token: ${{ secrets.AUTO_MERGE }}
