@@ -25,7 +25,7 @@ jobs:
       run: pipenv run python -m pytest tests/test_math.py
     - name: Run test_web
       run: pipenv run python -m pytest tests/test_web.py
-    - uses: ahmadnassri/action-dependabot-auto-merge@v2.3.0
+    - uses: ahmadnassri/action-dependabot-auto-merge@v2.3.1
       if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
       with:
         github-token: ${{ secrets.AUTO_MERGE }}
