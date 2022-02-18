@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "==6.2.5"
+pytest = "==7.0.1"
 selenium = "==4.1.0"
 black = "==22.1.0"
 pytest-bdd = "==5.0.0"
