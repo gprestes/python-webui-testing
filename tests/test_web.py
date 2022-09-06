@@ -3,6 +3,7 @@ import pytest
 from pages.result import DuckDuckGoResultPage
 from pages.search import DuckDuckGoSearchPage
 
+
 def test_basic_duckduckgo_search(browser):
     PHRASE = "panda"
 

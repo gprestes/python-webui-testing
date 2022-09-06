@@ -1,6 +1,6 @@
 import json
-import pytest
 
+import pytest
 from selenium.webdriver import Chrome, Firefox
 from selenium.webdriver.chrome.options import Options
 

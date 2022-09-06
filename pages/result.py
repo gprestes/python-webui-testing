@@ -1,5 +1,6 @@
-from pages.search import DuckDuckGoSearchPage
 from selenium.webdriver.common.by import By
+
+from pages.search import DuckDuckGoSearchPage
 
 
 class DuckDuckGoResultPage:
