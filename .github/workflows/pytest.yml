@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4.1.7
-    - name: Set up Python 3.8.6
+    - name: Set up Python 3.8.18
       uses: actions/setup-python@v5.1.1
       with:
-        python-version: 3.8.6
+        python-version: 3.8.18
     - uses: nanasess/setup-chromedriver@v2.2.2
     - run: |
         export DISPLAY=:99
