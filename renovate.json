@@ -12,6 +12,6 @@
         "automerge": true
     }],
     "extends": [
-    "config:base"
+    "config:recommended"
   ]
 }
