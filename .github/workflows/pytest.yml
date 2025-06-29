@@ -10,7 +10,7 @@ jobs:
     - name: Set up Python 3.8.18
       uses: actions/setup-python@v5.6.0
       with:
-        python-version: 3.13.3
+        python-version: 3.13.5
     - uses: nanasess/setup-chromedriver@v2.3.0
     - run: |
         export DISPLAY=:99
