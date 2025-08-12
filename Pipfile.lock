@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "49a6aca4a404fb3f7c084cd8d679913740acee39e62e1c28a77bdd6f8efdfd08"
+            "sha256": "9b3951dd02e9e6504e225df71b473caa88a13e1c440e5d7a09640a0f10f3bd87"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -56,11 +56,11 @@
         },
         "certifi": {
             "hashes": [
-                "sha256:6b31f564a415d79ee77df69d757bb49a5bb53bd9f756cbbe24394ffd6fc1f4b2",
-                "sha256:8ea99dbdfaaf2ba2f9bac77b9249ef62ec5218e7c2b2e903378ed5fccf765995"
+                "sha256:e564105f78ded564e3ae7c923924435e1daa7463faeab5bb932bc53ffae63407",
+                "sha256:f6c12493cfb1b06ba2ff328595af9350c65d6644968e5d3a2ffd78699af217a5"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==2025.7.14"
+            "version": "==2025.8.3"
         },
         "click": {
             "hashes": [
@@ -209,11 +209,11 @@
         },
         "parse-type": {
             "hashes": [
-                "sha256:5e1ec10440b000c3f818006033372939e693a9ec0176f446d9303e4db88489a6",
-                "sha256:83d41144a82d6b8541127bf212dd76c7f01baff680b498ce8a4d052a7a5bce4c"
+                "sha256:3ca79bbe71e170dfccc8ec6c341edfd1c2a0fc1e5cfd18330f93af938de2348c",
+                "sha256:513a3784104839770d690e04339a8b4d33439fcd5dd99f2e4580f9fc1097bfb2"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1'",
-            "version": "==0.6.4"
+            "version": "==0.6.6"
         },
         "pathspec": {
             "hashes": [
@@ -276,12 +276,12 @@
         },
         "selenium": {
             "hashes": [
-                "sha256:0f6d147595f08c6d4bad87b34c39dcacb4650aedc78e3956c8eac1bb752a3854",
-                "sha256:ea208f7db9e3b26e58c4a817ea9dd29454576d6ea55937d754df079ad588e1ad"
+                "sha256:83937a538afb40ef01e384c1405c0863fa184c26c759d34a1ebbe7b925d3481c",
+                "sha256:90bb6c6091fa55805785cf1660fa1e2176220475ccdb466190f654ef8eef6114"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==4.34.2"
+            "version": "==4.35.0"
         },
         "six": {
             "hashes": [
