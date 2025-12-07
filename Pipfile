@@ -5,7 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "==9.0.2"
-selenium = "==4.38.0"
+selenium = "==4.39.0"
 black = "==25.11.0"
 pytest-bdd = "==8.1.0"
 
