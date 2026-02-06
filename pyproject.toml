@@ -1,0 +1,20 @@
+[project]
+name = ""
+version = "0.0.1"
+requires-python = "~=3.14.2"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest==9.0.2",
+    "selenium==4.40.0",
+    "black==26.1.0",
+    "pytest-bdd==8.1.0",
+]
+
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
