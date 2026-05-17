@@ -8,7 +8,7 @@ dependencies = []
 dev = [
     "pytest==9.0.3",
     "selenium==4.44.0",
-    "black==26.3.1",
+    "black==26.5.0",
     "pytest-bdd==8.1.0",
 ]
 
