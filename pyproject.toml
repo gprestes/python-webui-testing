@@ -9,7 +9,7 @@ dev = [
     "pytest==9.2.0",
     "selenium==4.52.0",
     "black==26.10.1",
-    "pytest-bdd==8.1.0",
+    "pytest-bdd==9.0.0",
 ]
 
 [tool.uv]
